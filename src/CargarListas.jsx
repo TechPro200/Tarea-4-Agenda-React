@@ -3,12 +3,19 @@ import './CargarListas.css'
 
 function CargarListas() {
     const [contactos, setContactos] = useState([]);
-
-    useEffect(() => {
+    const cargar = () => {
         fetch("http://www.raydelto.org/agenda.php")
             .then(res => res.json())
             .then(datos => setContactos(datos))
             .catch(error => console.error("Error al cargar los contactos:", error));
+    };
+
+    useEffect(() => {
+        cargar();
+        window.addEventListener("actualizarLista", cargar);
+        return () => {
+            window.removeEventListener("actualizarLista", cargar);
+        };
     }, []);
 
     return (
@@ -21,4 +28,5 @@ function CargarListas() {
         </ul>
     );
 }
-export default CargarListas
+
+export default CargarListas;

@@ -15,14 +15,13 @@ function AgregarContactos() {
             body: JSON.stringify(contacto),
         })
             .then((res) => res.json())
-            .then((nuevo) => {
-                onGuardado();
+            .then(() => {
+                window.dispatchEvent(new Event("actualizarLista"));
                 setNombre("");
                 setApellido("");
                 setTelefono("");
             })
-            .catch((error => console.error("Error al introducir contacto nuevo:", error))
-            );
+            .catch((error => console.error("Error:", error)));
     };
 
     return (
@@ -38,4 +37,4 @@ function AgregarContactos() {
     );
 }
 
-export default AgregarContactos
+export default AgregarContactos;
