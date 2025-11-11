@@ -1,0 +1,21 @@
+input{
+    border: 2px solid black;  
+    border-radius: 5px;       
+    padding: 8px;
+    margin: 5px 0;           
+    width: 90%;               
+}
+button{
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;  
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #95a06d;
+    color: white;
+    font-weight: bold;
+}
+h1{
+    text-align: center; 
+    color: #000000;    
+}
