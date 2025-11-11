@@ -1,5 +1,5 @@
 .Form{
-    background-color: rgb(241, 244, 220);
+    background-color: rgb(20, 20, 19);
     border: 2px solid #333;    
     padding: 25px;             
     border-radius: 10px;       
@@ -9,5 +9,5 @@
 }
 .Form h1{
     text-align: center; 
-    color: #000000;    
+    color: #ffffff;    
 }

@@ -11,11 +11,11 @@ button{
     padding: 10px 20px;
     margin-top: 10px;
     cursor: pointer;
-    background-color: #95a06d;
+    background-color: #0099ec;
     color: white;
     font-weight: bold;
 }
-h1{
+h3{
     text-align: center; 
-    color: #000000;    
+    color: #fffcfc;    
 }
